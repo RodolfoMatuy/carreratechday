@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blockchain Carrera</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>BLOCKCHAIN</h1>
+    <p>Clique nos botões abaixo para ver cada etapa</p>
+  </header>
+
+  <main>
+    <div id="visual-area">
+      <!-- SVG animado aparecerá aqui -->
+      <svg id="blockchain-visual" viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg">
+        <!-- Blocos e linhas serão adicionados via JS -->
+      </svg>
+    </div>
+
+    <div id="controls">
+      <button type="button" onclick="mostrarEtapa(1)">1. Transação</button>
+      <button type="button" onclick="mostrarEtapa(2)">2. Bloco</button>
+      <button type="button" onclick="mostrarEtapa(3)">3. Cadeia</button>
+      <button type="button" onclick="mostrarEtapa(4)">4. Segurança</button>
+      <button type="button" onclick="mostrarEtapa(5)">5. Descentralização</button>
+    </div>
+
+    <div id="descricao">
+  <p>Clique em uma etapa para começar.</p>
+  
+    <div id="timer" style="font-size: 1.2rem; margin-top: 10px;"></div>
+  </div>
+
+  </main>
+
+  <footer>
+    Criado por Rodolfo • Apresentação Blockchain Carrera • 2025
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
