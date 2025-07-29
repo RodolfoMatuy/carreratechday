@@ -403,13 +403,20 @@ case 5:
     </line>
   `;
 
-  desc.innerHTML = `
-    <p><strong>Rede Descentralizada</strong></p>
-    <p>Cada nó representa um <strong>computador conectado</strong> à blockchain.</p>
-    <p>Todos os nós possuem <strong>cópias idênticas</strong> da cadeia de blocos.</p>
-    <p>Esses nós estão conectados entre si, trocando informações e mantendo a rede atualizada em tempo real.</p>
-    <p>Se um nó cair ou for comprometido, os demais continuam funcionando normalmente, garantindo <strong>resiliência e segurança</strong>.</p>
-  `;
+desc.innerHTML = `
+  <p><strong>Rede Descentralizada</strong></p>
+  <p>Cada nó representa um <strong>computador conectado</strong> à blockchain.</p>
+  <p>Todos os nós possuem <strong>cópias idênticas</strong> da cadeia de blocos.</p>
+  <p>Esses nós estão conectados entre si, trocando informações e mantendo a rede atualizada em tempo real.</p>
+  <p>Se um nó cair ou for comprometido, os demais continuam funcionando normalmente, garantindo <strong>resiliência e segurança</strong>.</p>
+  <div style="margin-top: 2rem;">
+    <button id="btn-carrerablock"
+      style="padding: 0.6rem 1.2rem; font-weight: bold; border: none; border-radius: 8px; background: #10b981; color: white; cursor: pointer;"
+      onclick="window.location.href='carrerablock.html'">
+      Como o blockchain poderia ser integrado ao grupo Carrera?
+    </button>
+  </div>
+`;
 
   iniciarCronometro(60);
   break;
