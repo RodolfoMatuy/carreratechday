@@ -126,7 +126,7 @@ function mostrarEtapaCarrera(etapa) {
       }, 20000);
       setTimeout(() => {
   desc.innerHTML += `
-    <p>📜 Smart Contracts:</em> as garantias e revisões são gerenciadas automaticamente, valorizando o veículo com um histórico à prova de fraudes.</p>
+    <p>📜 Smart Contracts: as garantias e revisões são gerenciadas automaticamente, valorizando o veículo com um histórico à prova de fraudes.</p>
   `;
 }, 30000);
       break;
@@ -213,7 +213,7 @@ function mostrarEtapaCarrera(etapa) {
       }, 30000);
       setTimeout(() => {
   desc.innerHTML += `
-    <p>💡 Novos modelos:</em> os tokens podem representar benefícios fracionados, brindes exclusivos ou acesso a serviços personalizados.</p>
+    <p>💡 Novos modelos: os tokens podem representar benefícios fracionados, brindes exclusivos ou acesso a serviços personalizados.</p>
   `;
 }, 40000);
       break;
@@ -262,7 +262,7 @@ function mostrarEtapaCarrera(etapa) {
       }, 30000);
       setTimeout(() => {
   desc.innerHTML += `
-    <p>🚘 Tokenização:</em> veículos podem ser vendidos em cotas ou com NFTs de blindagem, revisão vitalícia ou acesso exclusivo a serviços premium.</p>
+    <p>🚘 Tokenização: veículos podem ser vendidos em cotas ou com NFTs de blindagem, revisão vitalícia ou acesso exclusivo a serviços premium.</p>
   `;
 }, 40000);
       break;
