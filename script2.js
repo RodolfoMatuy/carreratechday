@@ -164,7 +164,7 @@ function mostrarEtapaCarrera(etapa) {
       }, 20000);
       setTimeout(() => {
   desc.innerHTML += `
-    <p class="detalhe"><em>📦 Gestão de peças:</em> blockchain conecta estoque entre montadoras, fornecedores e lojas, evitando falhas de inventário.</p>
+    <p>📦 Gestão de peças: blockchain conecta estoque entre montadoras, fornecedores e lojas, evitando falhas de inventário.</p>
   `;
 }, 30000);
       break;
