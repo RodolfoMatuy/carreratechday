@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CarreraTechDay</title>
+  <link rel="stylesheet" href="style2.css" />
+</head>
+<body>
+
+  <header>
+    <h1>BLOCKCHAIN NO GRUPO CARRERA</h1>
+    <p>Clique em uma etapa para ver uma aplicação no Grupo Carrera</p>
+  </header>
+
+  <main>
+    <div id="visual-area">
+      <svg id="carrera-visual" viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg"></svg>
+    </div>
+
+    <div id="controls">
+      <button onclick="mostrarEtapaCarrera(1)">1. Histórico</button>
+      <button onclick="mostrarEtapaCarrera(2)">2. Garantia</button>
+      <button onclick="mostrarEtapaCarrera(3)">3. Peças</button>
+      <button onclick="mostrarEtapaCarrera(4)">4. Tokens</button>
+      <button onclick="mostrarEtapaCarrera(5)">5. NFTs</button>
+    </div>
+
+    <div id="descricao">
+      <p>Clique em uma etapa para começar.</p>
+      <div id="timer"></div>
+    </div>
+    <div style="margin-top: 3rem;">
+    <button onclick="window.location.href='index.html'" 
+      style="padding: 0.6rem 1.2rem; font-weight: bold; border: none; border-radius: 8px; background: #3b82f6; color: white; cursor: pointer;">
+      ← Voltar para Blockchain.
+    </button>
+  </div>
+  </main>
+
+  <footer>
+    Criado por Rodolfo • Blockchain Grupo Carrera • 2025
+  </footer>
+
+  <script src="script2.js"></script>
+</body>
+</html>
