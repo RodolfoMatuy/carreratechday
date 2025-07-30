@@ -152,6 +152,7 @@ function mostrarEtapa(etapa) {
           <polygon points="200,105 210,110 200,115" fill="black">
             <animateTransform attributeName="transform" type="translate" values="0,0;10,0;0,0" dur="1.5s" repeatCount="indefinite" />
           </polygon>
+
           <g class="bloco" id="blocoB">
             <rect id="retB" x="220" y="60" width="120" height="100" rx="10" fill="#38bdf8" />
             <text x="280" y="80" font-size="14" fill="black" text-anchor="middle" font-weight="bold">Bloco B</text>
@@ -173,6 +174,7 @@ function mostrarEtapa(etapa) {
           <polygon points="370,105 380,110 370,115" fill="black">
             <animateTransform attributeName="transform" type="translate" values="0,0;10,0;0,0" dur="1.5s" repeatCount="indefinite" />
           </polygon>
+
           <g class="bloco" id="blocoC">
             <rect id="retC" x="390" y="60" width="120" height="100" rx="10" fill="#38bdf8" />
             <text x="450" y="80" font-size="14" fill="black" text-anchor="middle" font-weight="bold">Bloco C</text>
@@ -194,6 +196,7 @@ function mostrarEtapa(etapa) {
           <polygon points="540,105 550,110 540,115" fill="black">
             <animateTransform attributeName="transform" type="translate" values="0,0;10,0;0,0" dur="1.5s" repeatCount="indefinite" />
           </polygon>
+
           <g class="bloco" id="blocoD">
             <rect id="retD" x="560" y="60" width="120" height="100" rx="10" fill="#38bdf8" />
             <text x="620" y="80" font-size="14" fill="black" text-anchor="middle" font-weight="bold">Bloco D</text>
@@ -210,25 +213,25 @@ function mostrarEtapa(etapa) {
           // Integra visual final (como case 3)
           setTimeout(() => {
             svg.innerHTML = `
-              <g class="bloco"><rect x="20" y="60" width="100" height="100" rx="10" fill="#22c55e" />
-              <text x="70" y="80" font-size="14" fill="black" text-anchor="middle" font-weight="bold">Bloco A</text>
-              <text x="70" y="100" font-size="12" fill="black" text-anchor="middle">Hash Ant.: GENESIS</text>
-              <text x="70" y="120" font-size="11" fill="black" text-anchor="middle">Hash: ${hash1Minerado}</text></g>
-              <line x1="120" y1="110" x2="140" y2="110" stroke="#fbbf24" stroke-width="3" />
-              <g class="bloco"><rect x="150" y="60" width="100" height="100" rx="10" fill="#22c55e" />
-              <text x="200" y="80" font-size="14" fill="black" text-anchor="middle" font-weight="bold">Bloco B</text>
-              <text x="200" y="100" font-size="12" fill="black" text-anchor="middle">Hash Ant.: ${hash1Minerado}</text>
-              <text x="200" y="120" font-size="11" fill="black" text-anchor="middle">Hash: ${hash2Minerado}</text></g>
-              <line x1="250" y1="110" x2="270" y2="110" stroke="#fbbf24" stroke-width="3" />
-              <g class="bloco"><rect x="280" y="60" width="100" height="100" rx="10" fill="#22c55e" />
-              <text x="330" y="80" font-size="14" fill="black" text-anchor="middle" font-weight="bold">Bloco C</text>
-              <text x="330" y="100" font-size="12" fill="black" text-anchor="middle">Hash Ant.: ${hash2Minerado}</text>
-              <text x="330" y="120" font-size="11" fill="black" text-anchor="middle">Hash: ${hash3Minerado}</text></g>
-              <line x1="380" y1="110" x2="400" y2="110" stroke="#fbbf24" stroke-width="3" />
-              <g class="bloco"><rect x="410" y="60" width="100" height="100" rx="10" fill="#22c55e" />
-              <text x="460" y="80" font-size="14" fill="black" text-anchor="middle" font-weight="bold">Bloco D</text>
-              <text x="460" y="100" font-size="12" fill="black" text-anchor="middle">Hash Ant.: ${hash3Minerado}</text>
-              <text x="460" y="120" font-size="11" fill="black" text-anchor="middle">Hash: ${hash4Minerado}</text></g>
+              <g class="bloco"><rect x="50" y="60" width="120" height="100" rx="10" fill="#22c55e" />
+              <text x="110" y="80" font-size="14" fill="black" text-anchor="middle" font-weight="bold">Bloco A</text>
+              <text x="110" y="100" font-size="12" fill="black" text-anchor="middle">Hash Ant.: GENESIS</text>
+              <text x="110" y="120" font-size="11" fill="black" text-anchor="middle">Hash: ${hash1Minerado}</text></g>
+
+              <g class="bloco"><rect x="220" y="60" width="120" height="100" rx="10" fill="#22c55e" />
+              <text x="280" y="80" font-size="14" fill="black" text-anchor="middle" font-weight="bold">Bloco B</text>
+              <text x="280" y="100" font-size="12" fill="black" text-anchor="middle">Hash Ant.: ${hash1Minerado}</text>
+              <text x="280" y="120" font-size="11" fill="black" text-anchor="middle">Hash: ${hash2Minerado}</text></g>
+
+              <g class="bloco"><rect x="390" y="60" width="120" height="100" rx="10" fill="#22c55e" />
+              <text x="450" y="80" font-size="14" fill="black" text-anchor="middle" font-weight="bold">Bloco C</text>
+              <text x="450" y="100" font-size="12" fill="black" text-anchor="middle">Hash Ant.: ${hash2Minerado}</text>
+              <text x="450" y="120" font-size="11" fill="black" text-anchor="middle">Hash: ${hash3Minerado}</text></g>
+
+              <g class="bloco"><rect x="560" y="60" width="120" height="100" rx="10" fill="#22c55e" />
+              <text x="620" y="80" font-size="14" fill="black" text-anchor="middle" font-weight="bold">Bloco D</text>
+              <text x="620" y="100" font-size="12" fill="black" text-anchor="middle">Hash Ant.: ${hash3Minerado}</text>
+              <text x="620" y="120" font-size="11" fill="black" text-anchor="middle">Hash: ${hash4Minerado}</text></g>
             `;
             desc.innerHTML = `
               <p><strong>Cadeia de Blocos Validada!</strong></p>
@@ -247,42 +250,32 @@ function mostrarEtapa(etapa) {
   }
 
   svg.innerHTML = `
-    <!-- BLOCO A -->
     <g class="bloco">
-      <rect x="20" y="60" width="100" height="100" rx="10" fill="#22c55e" />
-      <text x="70" y="80" font-size="14" fill="black" text-anchor="middle" font-weight="bold">Bloco A</text>
-      <text x="70" y="100" font-size="12" fill="black" text-anchor="middle">Hash Ant.: GENESIS</text>
-      <text x="70" y="120" font-size="11" fill="black" text-anchor="middle">Hash: ${hash1Minerado}</text>
+      <rect x="50" y="60" width="120" height="100" rx="10" fill="#22c55e" />
+      <text x="110" y="80" font-size="14" fill="black" text-anchor="middle" font-weight="bold">Bloco A</text>
+      <text x="110" y="100" font-size="12" fill="black" text-anchor="middle">Hash Ant.: GENESIS</text>
+      <text x="110" y="120" font-size="11" fill="black" text-anchor="middle">Hash: ${hash1Minerado}</text>
     </g>
 
-    <line x1="120" y1="110" x2="140" y2="110" stroke="#fbbf24" stroke-width="3" />
-
-    <!-- BLOCO B -->
     <g class="bloco">
-      <rect x="150" y="60" width="100" height="100" rx="10" fill="#22c55e" />
-      <text x="200" y="80" font-size="14" fill="black" text-anchor="middle" font-weight="bold">Bloco B</text>
-      <text x="200" y="100" font-size="12" fill="black" text-anchor="middle">Hash Ant.: ${hash1Minerado}</text>
-      <text x="200" y="120" font-size="11" fill="black" text-anchor="middle">Hash: ${hash2Minerado}</text>
+      <rect x="220" y="60" width="120" height="100" rx="10" fill="#22c55e" />
+      <text x="280" y="80" font-size="14" fill="black" text-anchor="middle" font-weight="bold">Bloco B</text>
+      <text x="280" y="100" font-size="12" fill="black" text-anchor="middle">Hash Ant.: ${hash1Minerado}</text>
+      <text x="280" y="120" font-size="11" fill="black" text-anchor="middle">Hash: ${hash2Minerado}</text>
     </g>
 
-    <line x1="250" y1="110" x2="270" y2="110" stroke="#fbbf24" stroke-width="3" />
-
-    <!-- BLOCO C -->
     <g class="bloco">
-      <rect x="280" y="60" width="100" height="100" rx="10" fill="#22c55e" />
-      <text x="330" y="80" font-size="14" fill="black" text-anchor="middle" font-weight="bold">Bloco C</text>
-      <text x="330" y="100" font-size="12" fill="black" text-anchor="middle">Hash Ant.: ${hash2Minerado}</text>
-      <text x="330" y="120" font-size="11" fill="black" text-anchor="middle">Hash: ${hash3Minerado}</text>
+      <rect x="390" y="60" width="120" height="100" rx="10" fill="#22c55e" />
+      <text x="450" y="80" font-size="14" fill="black" text-anchor="middle" font-weight="bold">Bloco C</text>
+      <text x="450" y="100" font-size="12" fill="black" text-anchor="middle">Hash Ant.: ${hash2Minerado}</text>
+      <text x="450" y="120" font-size="11" fill="black" text-anchor="middle">Hash: ${hash3Minerado}</text>
     </g>
 
-    <line x1="380" y1="110" x2="400" y2="110" stroke="#fbbf24" stroke-width="3" />
-
-    <!-- BLOCO D -->
     <g class="bloco">
-      <rect x="410" y="60" width="100" height="100" rx="10" fill="#22c55e" />
-      <text x="460" y="80" font-size="14" fill="black" text-anchor="middle" font-weight="bold">Bloco D</text>
-      <text x="460" y="100" font-size="12" fill="black" text-anchor="middle">Hash Ant.: ${hash3Minerado}</text>
-      <text x="460" y="120" font-size="11" fill="black" text-anchor="middle">Hash: ${hash4Minerado}</text>
+      <rect x="560" y="60" width="120" height="100" rx="10" fill="#22c55e" />
+      <text x="620" y="80" font-size="14" fill="black" text-anchor="middle" font-weight="bold">Bloco D</text>
+      <text x="620" y="100" font-size="12" fill="black" text-anchor="middle">Hash Ant.: ${hash3Minerado}</text>
+      <text x="620" y="120" font-size="11" fill="black" text-anchor="middle">Hash: ${hash4Minerado}</text>
     </g>
   `;
 
@@ -307,42 +300,32 @@ function mostrarEtapa(etapa) {
       }
 
       svg.innerHTML = `
-        <!-- BLOCO A -->
         <g class="bloco">
-          <rect x="20" y="60" width="100" height="100" rx="10" fill="#22c55e" />
-          <text x="70" y="80" font-size="14" fill="black" text-anchor="middle" font-weight="bold">Bloco A</text>
-          <text x="70" y="100" font-size="12" fill="black" text-anchor="middle">Hash Ant.: GENESIS</text>
-          <text x="70" y="120" font-size="11" fill="black" text-anchor="middle">Hash: ${hash1Minerado}</text>
+          <rect x="50" y="60" width="120" height="100" rx="10" fill="#22c55e" />
+          <text x="110" y="80" font-size="14" fill="black" text-anchor="middle" font-weight="bold">Bloco A</text>
+          <text x="110" y="100" font-size="12" fill="black" text-anchor="middle">Hash Ant.: GENESIS</text>
+          <text x="110" y="120" font-size="11" fill="black" text-anchor="middle">Hash: ${hash1Minerado}</text>
         </g>
 
-        <line x1="120" y1="110" x2="140" y2="110" stroke="#f87171" stroke-width="3" />
-
-        <!-- BLOCO B -->
         <g class="bloco">
-          <rect x="150" y="60" width="100" height="100" rx="10" fill="#22c55e" />
-          <text x="200" y="80" font-size="14" fill="black" text-anchor="middle" font-weight="bold">Bloco B</text>
-          <text x="200" y="100" font-size="12" fill="black" text-anchor="middle">Hash Ant.: ${hash1Minerado}</text>
-          <text x="200" y="120" font-size="11" fill="black" text-anchor="middle">Hash: ${hash2Minerado}</text>
+          <rect x="220" y="60" width="120" height="100" rx="10" fill="#22c55e" />
+          <text x="280" y="80" font-size="14" fill="black" text-anchor="middle" font-weight="bold">Bloco B</text>
+          <text x="280" y="100" font-size="12" fill="black" text-anchor="middle">Hash Ant.: ${hash1Minerado}</text>
+          <text x="280" y="120" font-size="11" fill="black" text-anchor="middle">Hash: ${hash2Minerado}</text>
         </g>
 
-        <line x1="250" y1="110" x2="270" y2="110" stroke="#f87171" stroke-width="3" />
-
-        <!-- BLOCO C MODIFICADO -->
         <g class="bloco">
-          <rect x="280" y="60" width="100" height="100" rx="10" fill="#f87171" />
-          <text x="330" y="80" font-size="14" fill="black" text-anchor="middle" font-weight="bold">Bloco C</text>
-          <text x="330" y="100" font-size="12" fill="black" text-anchor="middle">Hash Ant.: ${hash2Minerado}</text>
-          <text x="330" y="120" font-size="11" fill="black" text-anchor="middle">Hash: modificado...</text>
+          <rect x="390" y="60" width="120" height="100" rx="10" fill="#f87171" />
+          <text x="450" y="80" font-size="14" fill="black" text-anchor="middle" font-weight="bold">Bloco C</text>
+          <text x="450" y="100" font-size="12" fill="black" text-anchor="middle">Hash Ant.: ${hash2Minerado}</text>
+          <text x="450" y="120" font-size="11" fill="black" text-anchor="middle">Hash: modificado...</text>
         </g>
 
-        <line x1="380" y1="110" x2="400" y2="110" stroke="#f87171" stroke-width="3" />
-
-        <!-- BLOCO D INVALIDADO -->
         <g class="bloco">
-          <rect x="410" y="60" width="100" height="100" rx="10" fill="#f87171" />
-          <text x="460" y="80" font-size="14" fill="black" text-anchor="middle" font-weight="bold">Bloco D</text>
-          <text x="460" y="100" font-size="12" fill="black" text-anchor="middle">Hash Ant.: modificado...</text>
-          <text x="460" y="120" font-size="11" fill="black" text-anchor="middle">Hash: inválido</text>
+          <rect x="560" y="60" width="120" height="100" rx="10" fill="#f87171" />
+          <text x="620" y="80" font-size="14" fill="black" text-anchor="middle" font-weight="bold">Bloco D</text>
+          <text x="620" y="100" font-size="12" fill="black" text-anchor="middle">Hash Ant.: modificado...</text>
+          <text x="620" y="120" font-size="11" fill="black" text-anchor="middle">Hash: inválido</text>
         </g>
       `;
 
@@ -360,7 +343,6 @@ function mostrarEtapa(etapa) {
 case 5:
   limparSVG();
   svg.innerHTML = `
-    <!-- Nós organizados centralmente -->
     <g class="no" id="no1">
       <circle cx="200" cy="100" r="30" fill="#22c55e" />
       <text x="200" y="100" font-size="10" fill="black" text-anchor="middle" dominant-baseline="middle">Nó 1</text>
@@ -385,7 +367,6 @@ case 5:
       <rect x="580" y="120" width="40" height="10" fill="#38bdf8" rx="2" />
     </g>
 
-    <!-- Conexões com animações -->
     <line x1="200" y1="100" x2="400" y2="30" stroke="#4ade80" stroke-width="2">
       <animate attributeName="stroke-opacity" values="0;1;0" dur="2s" repeatCount="indefinite" />
     </line>
