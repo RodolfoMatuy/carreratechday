@@ -40,7 +40,7 @@ function mostrarEtapaCarrera(etapa) {
           <text x="130" y="135" text-anchor="middle" font-weight="bold">Compra</text>
         </g>
       `;
-      desc.innerHTML = `<p><strong>🚗 Compra:</strong> Rodolfo compra um carro seminovo na Carrera e já encontra o histórico completo do veículo via blockchain.</p>`;
+      desc.innerHTML = `<p><strong>🚗 Compra:</strong> Rodolfo compra um carro 0km na Carrera e já encontra o histórico completo do veículo via blockchain.</p>`;
 
       setTimeout(() => {
         svg.innerHTML += `
@@ -279,3 +279,4 @@ function mostrarEtapaCarrera(etapa) {
       break;
   }
 }
+
